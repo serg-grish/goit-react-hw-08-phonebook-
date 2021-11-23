@@ -1,0 +1,30 @@
+.title {
+    font-Weight: 600px;
+    font-Size: 48px;
+    text-align: center;
+    color: rgb(63, 102, 207);
+  }
+.form {
+    width: 320px;
+    margin-Left: auto;
+    margin-Right: auto;
+  }
+.label {
+    display: flex;
+    flex-Direction: column;
+    margin-Bottom: 15px;
+  }
+.btn {
+    display: block;
+    width: 200px;
+    margin-Left: auto;
+    margin-Top: 35px;
+    margin-Right: auto;
+    padding-left: 15px;
+    padding-Top: 5px;
+    padding-Right: 15px;
+    padding-Bottom: 5px;
+    font-Size: 20px;
+    font-Weight: 600px;
+    color: rgb(63, 102, 207);
+  }

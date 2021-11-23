@@ -1,39 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from 'redux/auth';
-
-const styles = {
-  title: {
-    fontWeight: 600,
-    fontSize: 48,
-    textAlign: 'center',
-    color: 'rgb(63, 102, 207)',
-  },
-  form: {
-    width: 320,
-    marginLeft: 'auto',
-    marginRight: 'auto',
-  },
-  label: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginBottom: 15,
-  },
-  btn: {
-    display: 'block',
-    width: 200,
-    marginLeft: 'auto',
-    marginTop: 35,
-    marginRight: 'auto',
-    paddingLeft: 15,
-    paddingTop: 5,
-    paddingRight: 15,
-    paddingBottom: 5,
-    fontSize: 20,
-    fontWeight: 600,
-    color: 'rgb(63, 102, 207)',
-  },
-};
+import styles from "./RegisterView.module.scss";
 
 export default function RegisterView() {
   const dispatch = useDispatch();
@@ -65,10 +33,10 @@ export default function RegisterView() {
 
   return (
     <div>
-      <h1 style={styles.title}>Registration page</h1>
+      <h1 className={styles.title}>Registration page</h1>
 
-      <form onSubmit={handleSubmit} style={styles.form} autoComplete="off">
-        <label style={styles.label}>
+      <form onSubmit={handleSubmit} className={styles.form} autoComplete="off">
+        <label className={styles.label}>
           {/* Nickname */}
           <input
             type="text"
@@ -79,7 +47,7 @@ export default function RegisterView() {
           />
         </label>
 
-        <label style={styles.label}>
+        <label className={styles.label}>
           {/* Email */}
           <input
             type="email"
@@ -90,7 +58,7 @@ export default function RegisterView() {
           />
         </label>
 
-        <label style={styles.label}>
+        <label className={styles.label}>
           {/* Password */}
           <input
             type="password"
@@ -101,7 +69,7 @@ export default function RegisterView() {
           />
         </label>
 
-        <button type="submit" style={styles.btn}>
+        <button type="submit" className={styles.btn}>
           Sign Up
         </button>
       </form>

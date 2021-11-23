@@ -1,14 +1,6 @@
 import { useSelector } from 'react-redux';
 import { authSelectors } from 'redux/auth';
-
-const styles = {
-  title: {
-    fontWeight: 500,
-    fontSize: 48,
-    textAlign: 'center',
-    color: 'rgb(63, 102, 207)',
-  },
-};
+import styles from './HomeView.module.scss';
 
 export default function HomeView() {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
@@ -17,15 +9,15 @@ export default function HomeView() {
   return (
     <>
       {isLoggedIn ? (
-        <div style={styles.container}>
-          <p style={styles.title}>Hello, {userName}!</p>
-          <p style={styles.title}>We are glad to see you!</p>
+        <div className={styles.container}>
+          <p className={styles.title}>Hello, {userName}!</p>
+          <p className={styles.title}>We are glad to see you!</p>
         </div>
       ) : (
-        <div style={styles.container}>
-          <p style={styles.title}>Welcome to Phonebook App!</p>
-          <p style={styles.title}>
-            Register and use the application without restrictions
+        <div className={styles.container}>
+          <p className={styles.title}>Welcome to the Phonebook App! 📞</p>
+          <p className={styles.title}>
+            Please Sign Up to use the application
           </p>
         </div>
       )}
