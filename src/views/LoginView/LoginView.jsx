@@ -39,7 +39,7 @@ export default function LoginView() {
             name="email"
             value={email}
             onChange={handleChange}
-            placeholder="Enter your email"
+            placeholder="Enter email"
           />
         </label>
 
@@ -50,7 +50,7 @@ export default function LoginView() {
             name="password"
             value={password}
             onChange={handleChange}
-            placeholder="Enter your password"
+            placeholder="Enter password"
           />
         </label>
 

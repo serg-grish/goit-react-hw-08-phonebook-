@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/views/HomeView/HomeView.module.scss"],"names":[],"mappings":"AAAA,uBACI,iBAAkB,CAClB,cAAe,CACf,iBAAkB,CAClB,aAAwB","file":"3.aeefedcb.chunk.css","sourcesContent":[".title {\n    font-weight: 500px;\n    font-size: 48px;\n    text-align: center;\n    color: rgb(63, 102, 207);\n  }"]}

@@ -51,7 +51,7 @@ function ContactForm() {
           value={stateName}
           onChange={handleInputChangeName}
           title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
-          placeholder="Enter your name"
+          placeholder="Enter name"
           autoComplete="off"
           required
         />
@@ -66,7 +66,7 @@ function ContactForm() {
           value={stateNumber}
           onChange={handleInputChangeNumber}
           title="Номер телефона должен состоять цифр и может содержать пробелы, тире, круглые скобки и может начинаться с +"
-          placeholder="Enter your phone number"
+          placeholder="Enter phone number"
           autoComplete="on"
           required
         />

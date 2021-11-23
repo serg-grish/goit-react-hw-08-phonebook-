@@ -43,7 +43,7 @@ export default function RegisterView() {
             name="name"
             value={name}
             onChange={handleChange}
-            placeholder="Enter your nickname"
+            placeholder="Enter nickname"
           />
         </label>
 
@@ -54,7 +54,7 @@ export default function RegisterView() {
             name="email"
             value={email}
             onChange={handleChange}
-            placeholder="Enter your email as login"
+            placeholder="Enter email as login"
           />
         </label>
 
@@ -65,7 +65,7 @@ export default function RegisterView() {
             name="password"
             value={password}
             onChange={handleChange}
-            placeholder="Enter your password"
+            placeholder="Enter password"
           />
         </label>
 
